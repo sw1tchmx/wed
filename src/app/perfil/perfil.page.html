@@ -1,0 +1,70 @@
+<ion-header>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button>
+      <ion-icon ios="ios-notifications" md="md-notifications"></ion-icon>
+    </ion-button>
+
+  </ion-buttons>
+  <ion-buttons slot="end" (click)="openConfig()">
+    <ion-button>
+      <ion-icon ios="ios-cog" md="md-cog"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title class="cp">My Profile</ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content padding >
+<ion-grid>
+  <ion-row>
+    <ion-col  size="5" >
+      <div>
+          
+              <img class="ixm" src="assets/loginico.svg">
+        
+      </div>
+    </ion-col >
+    <ion-col >
+      <div>
+        <p class="tini bolds">Diamant Events</p>
+        <p class="tini vrd">Wedding Planner</p>
+        <p class="tini">
+            <ion-icon name="pin" ></ion-icon>
+            <ion-label>México</ion-label>
+            
+          </p>
+          <div class="px"> <img  src="assets/plus.svg" width="60px" height="28px"> <img class="mleft" src="assets/icoapp.png" width="60px" height="28px">  </div>
+      
+ 
+      </div>
+    </ion-col >
+  </ion-row>
+</ion-grid>
+
+<div class="wrap">
+  <div class="read-more" onclick="this.classList.add('expanded')">
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+    </div>
+    <span class="trigger">...more</span>
+  </div>
+</div>
+
+<ion-slides pager="true">
+
+  <ion-slide>
+   <img src="assets/foto1.jpeg">
+  </ion-slide>
+
+  <ion-slide>
+    <img src="assets/foto2.jpeg">
+  </ion-slide>
+
+  <ion-slide>
+    <img src="assets/foto3.jpeg">
+  </ion-slide>
+</ion-slides>
+
+
+
+</ion-content>

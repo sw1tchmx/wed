@@ -1,0 +1,68 @@
+<ion-header >
+    <ion-toolbar>
+        
+        <ion-button (click)="closeModal()" size="small" color="light" class="nt" >
+            <ion-icon name="close"></ion-icon>
+          </ion-button>
+      <ion-title >
+         
+        Log in 
+      </ion-title>
+    </ion-toolbar>
+  </ion-header> 
+
+  <ion-content padding>
+      <form >
+        <ion-grid>
+          <ion-row  justify-content-center>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+             
+              <div >
+                <ion-item>
+                  <ion-input  name="name" type="email" placeholder="E-mail" ngModel required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-input name="email" type="password" placeholder="Password" ngModel required></ion-input>
+                </ion-item>
+                <br>
+                <ion-row  justify-content-center>Or</ion-row>
+                
+              </div>
+
+              
+                
+              
+            </ion-col>
+            
+          </ion-row>
+        </ion-grid>
+      </form>
+
+      <a href="/profile"><ion-button expand="block"><ion-icon slot="start" name="logo-facebook"></ion-icon> Continue with Facebook</ion-button></a>
+      <a href="/profile"><ion-button expand="block" color="dark"><ion-icon slot="start" name="logo-instagram"></ion-icon> Continue with Instagram</ion-button></a>
+      <a href="/profile"><ion-button expand="block" color="danger"><ion-icon slot="start" name="logo-googleplus"></ion-icon> Continue with Google</ion-button></a>
+
+      <p class="terms">By joining WedProduction,you agree to our Terms of Service and Privacy Policy</p>
+    </ion-content>
+
+
+    <ion-footer>
+        <ion-toolbar>
+        
+         
+
+
+            <ion-grid align-self-center>
+                <ion-row  >
+                  <ion-col align-self-center class="kiki" size="8">
+                      <p class="w-x1">FORGOT YOUR PASSWORD? </p>
+                  </ion-col>
+                  <ion-col align-self-center>
+                      <a href="/profile"> <ion-button   color="secondary" size="small"  >
+                          LOG IN
+                        </ion-button> </a>
+                  </ion-col>
+                 </ion-row>
+            </ion-grid>
+        </ion-toolbar>
+      </ion-footer>

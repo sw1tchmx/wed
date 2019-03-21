@@ -1,0 +1,74 @@
+.cp{
+    text-align: center;
+}
+
+.tini{
+    font-size: 70%;
+}
+.px{
+    display: inline-block;
+}
+
+.bolds{
+    font-weight: bold;
+}
+
+.vrd{
+    color: #49ADBC;
+}
+
+.tini2{
+    font-size: 20%;
+}
+
+.ixm{
+    border-radius: 50%;
+    float: left;
+}
+
+.mleft{
+    margin-left: 20px;
+}
+
+
+  
+  .read-more {
+    position: relative;
+    
+    text-decoration: none;
+    cursor: text;
+    font-size: 10px;
+  }
+  .read-more .trigger {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    
+    font-weight: bold;
+  }
+  .read-more .content {
+    font-size: 10px;  
+    position: relative;
+    overflow: hidden;
+    max-height: 89.6px;
+    transition: max-height 500ms ease;
+  }
+  .read-more .content::before {
+    content: '';
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 50%, white 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 44.8px;
+    transition: opactiy 500ms ease, visibility 500ms ease;
+  }
+  .read-more.expanded .content {
+    max-height: 600px;
+  }
+  .read-more.expanded .content::before,
+  .read-more.expanded .trigger {
+    opacity: 0;
+    visibility: hidden;
+  }
+  

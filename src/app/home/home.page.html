@@ -1,12 +1,89 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title class="txt-join">
+      Join WedProduction
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> 
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content >
+  <!-- <ion-button (click)="presentActionSheet()">Hello action sheet</ion-button> -->
+  
+  
+ 
+
+    <ion-grid class="p-w">
+        <ion-row align-self-center>
+          <ion-col size="8">
+            <div>
+              Create a User Account
+              <p class="w-x">Brides , Grooms and Guests</p>
+            </div>
+          </ion-col>
+          <ion-col >
+            <div>
+             
+            </div>
+          </ion-col>
+          <ion-col align-self-center>
+            <div>
+                <!-- <ion-icon name="radio-button-on" ></ion-icon> -->
+                <ion-toggle mode="ios" color="dark" checked disabled ></ion-toggle>
+            </div>
+          </ion-col>
+        </ion-row>
+        </ion-grid> <br>
+
+        <ion-grid class="p-w">
+            <ion-row align-self-center>
+              <ion-col size="8">
+                <div>
+                  Create a Professional Account
+                  <p class="w-x">Photographers , Cinematographers , Wedding Planners , Venues...</p>
+                </div>
+              </ion-col>
+              <ion-col >
+                <div>
+                 
+                </div>
+              </ion-col>
+              <ion-col align-self-center>
+                <div>
+                    <!-- <ion-icon name="radio-button-on" ></ion-icon> -->
+                    <ion-toggle mode="ios" color="dark"  checked disabled ></ion-toggle>
+                </div>
+              </ion-col>
+            </ion-row>
+            </ion-grid> <br>
+
+            <a href="/profile"><ion-button expand="block"><ion-icon slot="start" name="logo-facebook"></ion-icon> Join with Facebook</ion-button></a>
+            <a href="/profile"><ion-button expand="block" color="dark"><ion-icon slot="start" name="logo-instagram"></ion-icon> Join with Instagram</ion-button></a>
+            <a href="/profile"><ion-button expand="block" color="danger"><ion-icon slot="start" name="logo-googleplus"></ion-icon> Join with Google</ion-button></a>
+            <ion-button expand="block" color="light"> Join with E-mail</ion-button> 
+
+
+          
+
+                      <ion-item>
+                          <ion-checkbox slot="start" color="secondary"></ion-checkbox>
+                          <ion-label class="check-txt">I agree to recieve  newsletters and product <br> updates from Wedproduction.</ion-label>
+                        </ion-item><br>
+
+                       
+                            
+                             
+
+                           
+                    
+                   
+            
+
+ 
+  
 </ion-content>
+<ion-footer>
+    <ion-toolbar>
+    
+      <div class="txt-join t-gray"><h5>Have an account? <a class="gray-sin" (click)="openModal()">Log in</a> </h5></div>
+    </ion-toolbar>
+  </ion-footer>
